@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --secoundary:#b3b3b4;
+    --primary:#ff3e6c;
+}
+body{
+    margin:1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.avatar-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+    align-items: baseline;
+    border: 2px solid var(--secoundary);
+    border-radius: 0.8rem;
+    margin-top:2rem;
+}
+.avatar{
+    height: 5rem;
+    width:5rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    padding:0.7rem;
+    color:rgb(49, 49, 49);
+    /* color:rgb(231, 231, 231); */
+
+}
+.avatar-md{
+    height: 5rem;
+    width:5rem;
+    font-size: 3rem;
+    padding:0.7rem;
+}
+
+.avatar-xl{
+    height: 8rem;
+    width:8rem;
+    font-size: 5rem;
+    padding:1rem;
+}
+
+.avatar-lg{
+    height: 6.5rem;
+    width:6.5rem;
+    font-size: 4rem;
+    padding:0.85rem;
+}
+.avatar-sm{
+    height: 3.5rem;
+    width:3.5rem;
+    font-size: 2rem;
+    padding:0.55rem;
+}
+
+.avatar-xs{
+    height: 2.5rem;
+    width:2.5rem;
+    font-size: 1.2rem;
+    padding:0.5rem;
+}
+.avatar-text{
+    background-color: var(--primary);
+   
+}
+.avatar-shape-box{
+    border-radius: 1.5rem;
+}
+
+
