@@ -11,6 +11,12 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     </head>
 <body>
+    <h2 class="component-heading">Badge on Avatar</h2>
+    <div class="component-description">Badge on Avatars are used to tell the User Status.They are basically 4 types 
+        online,offline,phone,dnd modes. Copy the below HTML code according to your requirements. If u want status badge 
+         with different sizes change <span class="highlight">avatar-xl</span> to <span class="highlight">avatar-sm</span>
+         (desired size) and <span class="highlight">badge-xl</span> to <span class="highlight"> badge-sm</span>
+        (desired size).</div>
     <div class="badge-and-avatar-container">
         <div class="badge-container">
          <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-xl">
@@ -33,31 +39,57 @@
 </div>   
 
     </div>
+   <div class="carbon-code">
+    <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28185%2C183%2C186%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253C%21--%2520ONLINE%2520status%2520badge%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-xl%2520badge-online%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%21--%2520OFFLINE%2520status%2520badge%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2520badge%2520badge-lg%2520badge-offline%2522%253E%253Cspan%2520class%253D%2522badge-offline-circle%2522%253E%253C%252Fspan%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%21--%2520ON%2520MOBILE%2520status%2520badge%2520--%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-phone%2520%2522%253E%253Ci%2520class%253D%2522fas%2520fa-mobile-alt%2520badge-md%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%253C%21--%2520DND%2520status%2520badge%2520--%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-sm%2520badge-dnd%2522%253E%253Cspan%2520class%253D%2522badge-dnd-text%2522%253E-%253C%252Fspan%253E%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%250A"
+  style=" border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+</div>
+
+<h2 class="component-heading">Badge on Icon</h2>
+<div class="component-description">Badge on Icons represents the badge count.Replace the text between the span
+     element from <span class="highlight">font icons</span> to change the icon</div>
 
     <div class="badge-and-icon-container">
     <div class="badge-container">
-        <i class="fas fa-shopping-cart icon"></i>
+
+        <span class="material-icons-outlined icon">
+            shopping_cart
+            </span>
         <div class="icon-badge">9</div>
        </div> 
 
     <div class="badge-container">
-        <i class="fas fa-shopping-bag icon"></i>
+        <span class="material-icons-outlined icon">
+            shopping_bag
+            </span>
         <div class="icon-badge">9</div>
        </div>
       
 
     <div class="badge-container">
-        <i class="fab fa-facebook-messenger icon"></i>
+        <span class="material-icons-outlined icon">
+            sms
+            </span>
         <div class="icon-badge">9</div>
        </div>
     
 
     <div class="badge-container">
-        <i class="far fa-bell icon"></i>
+        <span class="material-icons-outlined icon">
+            notifications
+            </span>
         <div class="icon-badge">9</div>
        </div>
+    </div>
+       <div class="carbon-code">
+            <iframe
+                  src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=127px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253Eshopping_cart%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520shopping_bag%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520sms%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520notifications%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%250A"
+                 style=" border:0; transform: scale(1); overflow:hidden;"
+                  sandbox="allow-scripts allow-same-origin">
+            </iframe>
+       </div>
 
-
-</div>
 </body>
 </html>

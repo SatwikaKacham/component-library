@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import '../avatar/avatar.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 *{
     padding: 0;
     margin: 0;
@@ -7,12 +10,43 @@
 }
 :root{
     --secoundary:#b3b3b4;
+    --secoundary-black:#272727;
     --primary:#ff3e6c;
+    --gray-text:#535665;
+    --success:green;
+    --warning:#f9a61a;
+    --danger:#f34648;
 }
 body{
     margin:1rem;
     font-family: 'Roboto', sans-serif;
 }
+.component-heading{
+    border-bottom: 2px solid var(--primary);
+    width:fit-content;
+}
+.component-description{
+    color:var(--gray-text);
+    margin:1rem 0;
+}
+.highlight{
+    color:var(--primary);
+}
+.carbon-code{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: fit-content;
+    max-height:15rem;
+    background-color: #FAFAFA;
+    margin: 2rem 0;
+    overflow: auto;
+    display:flex;
+}
+.carbon-code iframe{
+    width: 100%;
+    border: none;
+}
+
 .badge-and-avatar-container,.badge-and-icon-container{
     display:flex;
     flex-direction: row;
@@ -20,10 +54,10 @@ body{
     align-items: baseline;
     border: 2px solid var(--secoundary);
     border-radius: 0.8rem;
-    margin-top:2rem;
+    margin:2rem 0;
 }
 .badge-and-icon-container{
-    gap:2rem;
+    gap:1.5rem;
     padding:1rem;
 }
 .badge-container{
@@ -75,13 +109,13 @@ body{
     position :absolute;
     bottom:-0.75rem;
     right:0.1rem; 
-    color:black;
+    color:var(--secoundary-black);
     font-size: 2rem;
 }
 
 .badge-phone i{
     position :absolute;
-    color:green;
+    color:var(--success);
     background-color: white;
 }
 
@@ -96,30 +130,31 @@ body{
 }
 
 .badge-online{
-    background-color: green;
+    background-color:var(--success);
 }
 .badge-offline{
-    background-color: #f9a61a;
+    background-color: var(--warning);
 }
 .badge-dnd{
-    background-color: #f34648;
+    background-color: var(--danger);
 }
 
 
 .icon-badge{
     position :absolute;
-    background-color:rgb(83, 83, 83);
+    /* background-color:rgb(83, 83, 83); */
+    background-color:var(--primary);
     width:fit-content;
     top:0;
     right:-0.5rem;
     font-size: 0.8rem;
-    color:var(--primary);
+    color:var(--secoundary-black);
     font-weight: bold;
     padding:0.1rem  0.3rem;
     border-radius: 1rem;
 }
 .icon{
-    color:var(--primary);
+    color:var(--secoundary-black);
     border:1px solid white;
     font-size: 2rem;
     border-radius: 0.3rem;
