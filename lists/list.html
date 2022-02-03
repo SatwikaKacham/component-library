@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lists</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <h2 class="component-heading"> Normal Lists</h2>
+    <div class="component-description">Lists are powerful component used to display series of component </div>
+    <ul class="list-container">
+        <li class="list-item"> first list item </li>
+        <li class="list-item"> secound list item </li>
+        <li class="list-item"> third list item </li>
+        <li class="list-item"> fourth list item </li>
+        <li class="list-item"> fifth list item </li>
+    </ul>
+
+    <div class="carbon-code">
+        <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520first%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520secound%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520third%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fourth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fifth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%250A"
+            style="width: 620px; height: 242px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </div>
+
+
+    <h2 class="component-heading"> Active Item in List</h2>
+    <div class="component-description">Active is used specify which list item is active.</div>
+    <ul class="list-container">
+        <li class="list-item list-active-item"> first list item </li>
+        <li class="list-item"> secound list item </li>
+        <li class="list-item"> third list item </li>
+        <li class="list-item"> fourth list item </li>
+        <li class="list-item"> fifth list item </li>
+    </ul>
+
+
+    <div class="carbon-code">
+        <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520list-active-item%2522%253E%2520first%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520secound%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520third%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fourth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fifth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%250A"
+            style="width: 645px; height: 242px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </div>
+
+
+    <h2 class="component-heading"> Notification Lists</h2>
+    <div class="component-description">Notification Lists are used to give notifications to the user.</div>
+    <ul class="notification-list-container">
+        <li class="notification-list-item">
+            <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+            <div class="notification-list-description">
+                <h4>Satwika signin!!😊</h4>
+                <small>u can view more intresting stuff like this!</small>
+            </div>
+
+        </li>
+
+        <li class="notification-list-item">
+            <img src="images/jio.png" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+            <div class="notification-list-description">
+                <h4>JZ-JioPay</h4>
+                <small>90% daily data quota used today!</small>
+            </div>
+
+        </li>
+
+        <li class="notification-list-item">
+            <img src="images/neog.png" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+            <div class="notification-list-description">
+                <h4>neoG Bot 🤖</h4>
+                <small>Thank You :🥳 'xyz' for helping 'abc'.</small>
+            </div>
+
+        </li>
+
+        <li class="notification-list-item">
+            <img src="images/galary.png" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+            <div class="notification-list-description">
+                <h4>Galary📷</h4>
+                <small>Nostalgia!  smile wider with memories!</small>
+            </div>
+
+        </li>
+
+    </ul>
+
+
+    <div class="carbon-code">
+        <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cul%2520class%253D%2522notification-list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253ESatwika%2520signin%21%21%25F0%259F%2598%258A%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eu%2520can%2520view%2520more%2520intresting%2520stuff%2520like%2520this%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EJZ-JioPay%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253E90%2525%2520daily%2520data%2520quota%2520used%2520today%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EneoG%2520Bot%2520%25F0%259F%25A4%2596%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253EThank%2520You%2520%253A%25F0%259F%25A5%25B3%2520%27xyz%27%2520for%2520helping%2520%27abc%27.%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EGalary%25F0%259F%2593%25B7%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253ENostalgia%21%2520%2520smile%2520wider%2520with%2520memories%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%250A"
+            style="height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </div>
+</body>
+
+</html>
