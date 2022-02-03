@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
+    --success-light: rgb(156, 216, 156);
+    --warning-light: #f8e0b7;
+    --danger-light: #f7b2b3;
+}
+
+body {
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.component-heading {
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
+}
+
+.component-description {
+    color: var(--gray-text);
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.carbon-code iframe {
+    margin: 1rem;
+    width: 60%;
+}
+
+.text-main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container,
+.text-container-alignments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid var(--secoundary);
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.text-container-alignments {
+    width: 100%;
+}
+
+.text-left-align {
+    text-align: left;
+}
+
+.text-center-align {
+    text-align: center;
+}
+
+.text-right-align {
+    text-align: right;
+}
+
+.text-gray {
+    color: var(--gray-text);
+    opacity: 50%;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-warning {
+    color: var(--warning);
+}
+
+.text-failure {
+    color: var(--danger);
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-overline {
+    text-decoration: overline;
+}
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+.text-small {
+    font-size: 0.5rem;
+}
+
+.text-large {
+    font-size: 1.5rem;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-primary-background {
+    background-color: var(--primary);
+}
+
+@media only screen and (max-width: 1000px) {
+    .carbon-code iframe {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .carbon-code iframe {
+        width: 90%;
+        margin: 1rem;
+    }
+}
