@@ -3,159 +3,175 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --secoundary:#b3b3b4;
-    --secoundary-black:#272727;
-    --primary:#ff3e6c;
-    --gray-text:#535665;
-    --success:green;
-    --warning:#f9a61a;
-    --danger:#f34648;
+
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
 }
-body{
-    margin:1rem;
+
+body {
+    margin: 1rem;
     font-family: 'Roboto', sans-serif;
 }
-.component-heading{
+
+.component-heading {
     border-bottom: 2px solid var(--primary);
-    width:fit-content;
+    width: fit-content;
 }
-.component-description{
-    color:var(--gray-text);
-    margin:1rem 0;
+
+.component-description {
+    color: var(--gray-text);
+    margin: 1rem 0;
 }
-.highlight{
-    color:var(--primary);
+
+.highlight {
+    color: var(--primary);
 }
-.carbon-code{
+
+.carbon-code {
     box-sizing: border-box;
     width: 100%;
     min-height: fit-content;
-    max-height:15rem;
+    max-height: 15rem;
     background-color: #FAFAFA;
     margin: 2rem 0;
     overflow: auto;
-    display:flex;
+    display: flex;
 }
-.carbon-code iframe{
+
+.carbon-code iframe {
     width: 100%;
     border: none;
 }
 
-.badge-and-avatar-container,.badge-and-icon-container{
-    display:flex;
+.badge-and-avatar-container,
+.badge-and-icon-container {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     border: 2px solid var(--secoundary);
     border-radius: 0.8rem;
-    margin:2rem 0;
+    margin: 2rem 0;
 }
-.badge-and-icon-container{
-    gap:1.5rem;
-    padding:1rem;
-}
-.badge-container{
-    position :relative;
-    width:fit-content;
-    
 
+.badge-and-icon-container {
+    gap: 1.5rem;
+    padding: 1rem;
 }
-.badge-image{
+
+.badge-container {
+    position: relative;
+    width: fit-content;
+}
+
+.badge-image {
     height: 6rem;
-    width:6rem;
+    width: 6rem;
     border-radius: 5rem;
-   
 }
-.badge{
-    position :absolute;
-    bottom:1.5rem;
-    right:1.5rem;
+
+.badge {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
     height: 1rem;
-    width:1rem;
+    width: 1rem;
     border-radius: 5rem;
-    border:2px solid white;
+    border: 2px solid white;
     font-size: 2rem;
     text-align: center;
 }
-.badge-xl{
-    bottom:1.5rem;
-    right:1.5rem;
+
+.badge-xl {
+    bottom: 1.5rem;
+    right: 1.5rem;
     font-size: 1.5rem;
     border-radius: 1rem;
 }
-.badge-lg{
-    bottom:1.2rem;
-    right:1.2rem;
+
+.badge-lg {
+    bottom: 1.2rem;
+    right: 1.2rem;
     font-size: 1.3rem;
     border-radius: 1rem;
 }
-.badge-sm{
-    bottom:0.5rem;
-    right:0.5rem;
+
+.badge-sm {
+    bottom: 0.5rem;
+    right: 0.5rem;
     font-size: 1rem;
 }
-.badge-md{
-    bottom:1rem;
-    right:0.8rem;
+
+.badge-md {
+    bottom: 1rem;
+    right: 0.8rem;
     font-size: 1rem;
 }
-.badge-dnd-text{
-    position :absolute;
-    bottom:-0.75rem;
-    right:0.1rem; 
-    color:var(--secoundary-black);
+
+.badge-dnd-text {
+    position: absolute;
+    bottom: -0.75rem;
+    right: 0.1rem;
+    color: var(--secoundary-black);
     font-size: 2rem;
 }
 
-.badge-phone i{
-    position :absolute;
-    color:var(--success);
+.badge-phone i {
+    position: absolute;
+    color: var(--success);
     background-color: white;
 }
 
-.badge-offline-circle{
-    position :absolute;
-    width:0.5rem;
-    height:0.5rem;
+.badge-offline-circle {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: white;
     border-radius: 1rem;
-    bottom:0.28rem;
-    right:0.1rem; 
+    bottom: 0.28rem;
+    right: 0.1rem;
 }
 
-.badge-online{
-    background-color:var(--success);
+.badge-online {
+    background-color: var(--success);
 }
-.badge-offline{
+
+.badge-offline {
     background-color: var(--warning);
 }
-.badge-dnd{
+
+.badge-dnd {
     background-color: var(--danger);
 }
 
-
-.icon-badge{
-    position :absolute;
+.icon-badge {
+    position: absolute;
     /* background-color:rgb(83, 83, 83); */
-    background-color:var(--primary);
-    width:fit-content;
-    top:0;
-    right:-0.5rem;
+    background-color: var(--primary);
+    width: fit-content;
+    top: 0;
+    right: -0.5rem;
     font-size: 0.8rem;
-    color:var(--secoundary-black);
+    color: var(--secoundary-black);
     font-weight: bold;
-    padding:0.1rem  0.3rem;
+    padding: 0.1rem 0.3rem;
     border-radius: 1rem;
 }
-.icon{
-    color:var(--secoundary-black);
-    border:1px solid white;
+
+.icon {
+    color: var(--secoundary-black);
+    border: 1px solid white;
     font-size: 2rem;
     border-radius: 0.3rem;
 }

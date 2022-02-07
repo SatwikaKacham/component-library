@@ -76,13 +76,13 @@ body {
 
 .nav-navigator-item {
     position: relative;
+    box-sizing: border-box;
+    transition: width 2s ease-out;
 }
 
 .nav-navigator-item:hover {
     border-bottom: 2px solid var(--primary);
     color: var(--primary);
-    transition: 200ms ease-out;
-    box-sizing: border-box;
 }
 
 .nav-navigators a {
