@@ -1,4 +1,4 @@
-@import '../navigation/navigation.css';
+@import '/components/navigation/navigation.css';
 @import '/components/buttons/button.css';
 * {
     margin: 0;

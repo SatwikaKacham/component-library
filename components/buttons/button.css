@@ -41,20 +41,9 @@ body {
     color: var(--primary);
 }
 
-.carbon-code {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: fit-content;
-    max-height: 20rem;
-    background-color: #FAFAFA;
-    margin: 2rem 0;
-    overflow: auto;
-    display: flex;
-}
-
 .carbon-code iframe {
-    width: 100%;
-    border: none;
+    margin: 2rem 0;
+    width: 60%;
 }
 
 .button-main-container {
@@ -140,4 +129,17 @@ body {
     background-color: var(--secoundary-black);
     border: 2px solid var(--secoundary-black);
     color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .carbon-code iframe {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .carbon-code iframe {
+        width: 90%;
+        margin: 1rem;
+    }
 }
