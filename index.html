@@ -5,27 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Landing-page</title>
+    <link rel="stylesheet" href="landing-page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
     <nav class="nav-container">
         <div class="nav-logo-and-title">
-            <img class="nav-logo" src="images/logo.png" alt="logo">
+            <img class="nav-logo" src="images/codesup-logo.png" alt="logo">
             <div class="nav-title"> CodesUP</div>
         </div>
 
         <div class="nav-navigators">
-            <a class="nav-navigator-item" href="landing-page.html">Home</a>
-            <a class="nav-navigator-item" href="#">Documentation</a>
+            <a class="nav-navigator-item nav-active" href="index.html">Home</a>
+            <a class="nav-navigator-item" href="/components-page/components-page.html">Components</a>
         </div>
+
 
         <button class="nav-github-holder"><a href="#"><i class="fab fa-github">  View on Github</i></a></button>
 
     </nav>
-
     <main>
+        <div class="landing-page-container">
+            <div class="landing-page-description">
+                <div class="codes-up-title">
+                    CodesUP
+                </div>
+                <div class="landing-page-content">
+                    CodesUP is a free Modern Component library which provides responsive components open to everyone. Dont waste your efforts on styling buddy we are here to make your work easier.
+
+                </div>
+                <div class="landing-page-buttons-container">
+                    <button class="button-container primary-button"><a class="landing-get-started"href="#">Get Started</a></button>
+                    <button class="button-container primary-outline-button"><a class="landing-components" href="/components-page/components-page.html">Components</a></button>
+                </div>
+
+            </div>
+            <img src="images/landing-img.svg" alt="">
+        </div>
 
 
     </main>
