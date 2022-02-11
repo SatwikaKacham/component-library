@@ -69,23 +69,6 @@ body {
     color: white;
 }
 
-.avatar {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 5rem;
-    font-size: 3rem;
-    font-weight: 600;
-    padding: 0.7rem;
-    color: rgb(49, 49, 49);
-}
-
-.avatar-sm {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 2rem;
-    padding: 0.55rem;
-}
-
 .avatar-shape-box {
     border-radius: 1.5rem;
 }
