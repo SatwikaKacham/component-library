@@ -19,6 +19,7 @@
     --success-light: rgb(156, 216, 156);
     --warning-light: #f8e0b7;
     --danger-light: #f7b2b3;
+    --secoundary-gray: #4e4f53;
 }
 
 body {
@@ -48,8 +49,10 @@ body {
 .nav-container {
     display: flex;
     align-items: center;
+    background-color: white;
     gap: 2rem;
     box-shadow: 1px 1px 3px var(--secoundary);
+    color: #4e4f53;
 }
 
 .nav-logo-and-title {
@@ -78,6 +81,7 @@ body {
     position: relative;
     box-sizing: border-box;
     transition: width 2s ease-out;
+    color: var(--secoundary-gray);
 }
 
 .nav-navigator-item:hover {
@@ -87,7 +91,6 @@ body {
 .nav-navigators a {
     display: block;
     font-size: 1.2rem;
-    color: var(--gray-text);
     text-decoration: none;
 }
 
@@ -97,6 +100,7 @@ body {
     border: none;
     background-color: white;
     margin-right: 1rem;
+    color: var(--secoundary-gray);
 }
 
 .nav-github-holder a {
