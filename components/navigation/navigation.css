@@ -71,6 +71,11 @@ body {
     font-weight: bold;
 }
 
+.nav-title a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
 .nav-navigators {
     display: flex;
     font-weight: 600;
