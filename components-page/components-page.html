@@ -13,12 +13,12 @@
 <body>
     <nav class="nav-container components-page-nav">
         <div class="nav-logo-and-title">
-            <img class="nav-logo" src="images/codesup-logo.png" alt="logo">
-            <div class="nav-title"> CodesUP</div>
+            <a href="/index.html"> <img class="nav-logo" src="images/codesup-logo.png" alt="logo"> </a>
+            <div class="nav-title"> <a href="/index.html">CodesUP</a></div>
         </div>
 
         <div class="nav-navigators">
-            <a class="nav-navigator-item" href="/index.html">Home</a>
+            <a class="nav-navigator-item" href="/index.html">Get Started</a>
             <a class="nav-navigator-item nav-active" href="/components-page/components-page.html">Components</a>
         </div>
 
@@ -45,6 +45,7 @@
         <main class="components-container">
             <!-- avatar -->
             <h2 class="component-heading" id="avatar">Avatar</h2>
+            <h2 class="component-sub-heading">Image Avatar</h2>
             <div class="component-description">
                 Avatars are used for various purposes like display picture,user id...Here avatars are various sizes <span class="highlight">large(lg),extra large(xl),medium(md),small(sm)</span>.Round Avatar is default and for box shaped avatar add
                 <span class="highlight">avatar-shape-box</span> class.
@@ -77,7 +78,10 @@
           </iframe>
             </div>
 
-            <h2 class="component-heading">Text Avatar</h2>
+            <h2 class="component-sub-heading">Text Avatar</h2>
+            <div class="component-description">
+                Text Avatars are used for users without display picture
+            </div>
 
             <main class="avatar-container">
                 <div role="img" alt="avatar" class="avatar avatar-xl avatar-text">KS</div>
@@ -98,7 +102,7 @@
 
 
             <h2 class="component-heading" id="alert"> Alert</h2>
-            <div class="component-description">Alert messages</div>
+            <div class="component-description">Alert messages are used to give alerts to user</div>
             <div class="alert-main-container">
                 <div class="alert-container success-alert">
                     <span class="material-icons-outlined">
@@ -137,7 +141,8 @@
 
             <!-- badge -->
 
-            <h2 class="component-heading " id="badge">Badge on Avatar</h2>
+            <h2 class="component-heading " id="badge">Badge</h2>
+            <h2 class="component-sub-heading">Badge on Avatar</h2>
             <div class="component-description">Badge on Avatars are used to tell the User Status.They are basically 4 types online,offline,phone,dnd modes. Copy the below HTML code according to your requirements. If u want status badge with different sizes change <span class="highlight">avatar-xl</span>                to <span class="highlight">avatar-sm</span> (desired size) and <span class="highlight">badge-xl</span> to <span class="highlight"> badge-sm</span> (desired size).</div>
             <div class="badge-and-avatar-container">
                 <div class="badge-container">
@@ -167,7 +172,7 @@
           </iframe>
             </div>
 
-            <h2 class="component-heading">Badge on Icon</h2>
+            <h2 class="component-sub-heading">Badge on Icon</h2>
             <div class="component-description">Badge on Icons represents the badge count.Replace the text between the span element from <span class="highlight">font icons</span> to change the icon</div>
 
             <div class="badge-and-icon-container">
@@ -213,6 +218,7 @@
             <!-- buttons -->
 
             <h2 class="component-heading" id="button"> Button</h2>
+            <h2 class="component-sub-heading">Various Button styles</h2>
             <div class="component-description">Buttons are used in various places .</div>
             <div class="button-main-container">
                 <button class="button-container">Default Button</button>
@@ -232,7 +238,7 @@
   </iframe>
             </div>
 
-            <h2 class="component-heading"> Floating Button</h2>
+            <h2 class="component-sub-heading"> Floating Button</h2>
             <div class="component-description">Floating buttons are mostly used in single actions like moving from bottom of the page to top of the page .</div>
 
             <div class="button-main-container">
@@ -255,7 +261,8 @@
 
             <!-- card -->
 
-            <h2 class="component-heading" id="card"> Card with Badge</h2>
+            <h2 class="component-heading" id="card"> Card</h2>
+            <h2 class="component-sub-heading">Card with Badge</h2>
             <div class="component-description">Cards are used to display few short, related pieces of information.</div>
             <div class="card-main-container">
                 <!-- card with heart badge -->
@@ -322,7 +329,7 @@
 
             <!-- Horizontal Card with Dismiss -->
 
-            <h2 class="component-heading"> Horizontal Card with Dismiss</h2>
+            <h2 class="component-sub-heading"> Horizontal Card with Dismiss</h2>
             <div class="component-description">Dismiss cards are used to delete the card .</div>
             <div class="card-container card-container-horizontal">
                 <div class="card-image-and-header card-image-and-header-horizontal">
@@ -353,7 +360,7 @@
 
             <!-- Cards with text overlay -->
 
-            <h2 class="component-heading"> Cards with text overlay</h2>
+            <h2 class="component-sub-heading"> Cards with text overlay</h2>
             <div class="component-description">Cards are used to display few short, related pieces of information.</div>
             <div class="card-container">
                 <div class="card-image-and-header card-image-and-header-overlay">
@@ -387,7 +394,7 @@
 
             <!-- Text only cards -->
 
-            <h2 class="component-heading">Text only cards</h2>
+            <h2 class="component-sub-heading">Text only cards</h2>
             <div class="component-description">Cards with text only are used to give short insite of something</div>
             <div class="card-container">
                 <div class="card-image-and-header">
@@ -417,7 +424,8 @@
 
             <!-- image -->
 
-            <h2 class="component-heading" id="image"> Responsive image</h2>
+            <h2 class="component-heading" id="image"> Image</h2>
+            <h2 class="component-sub-heading">Responsive Image</h2>
             <div class="component-description"></div>
             <img src="images/responsive.png" alt="Responsive img" class="image-responsive">
             <div class="carbon-code">
@@ -426,7 +434,7 @@
       </iframe>
             </div>
 
-            <h2 class="component-heading"> Round image</h2>
+            <h2 class="component-sub-heading"> Round image</h2>
             <div class="component-description"></div>
             <img src="images/round.png" alt="Round img" class="image-round">
 
@@ -438,7 +446,8 @@
 
             <!-- input -->
 
-            <h2 class="component-heading" id="input"> Signin Input </h2>
+            <h2 class="component-heading" id="input">Input </h2>
+            <h2 class="component-sub-heading">Signin input</h2>
             <div class="component-description">Input fields are used to take data from user .Mostly used in signin or login.</div>
             <form class="input-whole-form">
                 <div class="input-data-item">
@@ -474,7 +483,7 @@
                     style=" height:300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
         </iframe>
             </div>
-            <h2 class="component-heading"> Normal Input</h2>
+            <h2 class="component-sub-heading"> Normal Input</h2>
             <div class="component-description">Input fields are used to take data from user .Mostly used in signin or login.</div>
             <form class="input-form">
                 <input type="text" class="input-field" placeholder=" ">
@@ -487,7 +496,7 @@
       </iframe>
             </div>
 
-            <h2 class="component-heading"> Error Input</h2>
+            <h2 class="component-sub-heading"> Error Input</h2>
             <div class="component-description">Input fields are used to take data from user .Mostly used in signin or login.</div>
             <form class="input-form">
                 <input type="text" class="input-field-error" placeholder=" ">
@@ -509,7 +518,9 @@
             <!-- text utilities -->
 
 
-            <h2 class="component-heading" id="text-utilities"> Headings</h2>
+            <h2 class="component-heading" id="text-utilities"> Text Utilities</h2>
+            <h2 class="component-sub-heading">Headings</h2>
+
             <div class="component-description">Headings are used to give head line to the data.there are 6 types of heading <span class="highlight">h1,h2,h3,h4,h5,h6</span> </div>
             <div class="text-container">
                 <h1> H1--Heading</h1>
@@ -526,7 +537,7 @@
             </iframe>
             </div>
 
-            <h2 class="component-heading"> Text Alignments</h2>
+            <h2 class="component-sub-heading"> Text Alignments</h2>
             <div class="component-description">There are 3 types of alighnments<span class="highlight">left-align,right-align,center-align</span> </div>
 
             <div class="text-container-alignments">
@@ -539,7 +550,7 @@
                     style=" height: 167px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
                </iframe>
             </div>
-            <h2 class="component-heading"> Text Styles</h2>
+            <h2 class="component-sub-heading"> Text Styles</h2>
             <div class="text-container">
                 <p> This text is default colored</p>
                 <p class="text-gray"> This text is grey colored</p>
@@ -569,7 +580,8 @@
 
 
 
-            <h2 class="component-heading" id="list"> Normal Lists</h2>
+            <h2 class="component-heading" id="list">Lists</h2>
+            <h2 class="component-sub-heading">Normal Lists</h2>
             <div class="component-description">Lists are powerful component used to display series of component </div>
             <ul class="list-container">
                 <li class="list-item"> first list item </li>
@@ -586,7 +598,7 @@
             </div>
 
 
-            <h2 class="component-heading"> Active Item in List</h2>
+            <h2 class="component-sub-heading"> Active Item in List</h2>
             <div class="component-description">Active is used specify which list item is active.</div>
             <ul class="list-container">
                 <li class="list-item list-active-item"> first list item </li>
@@ -604,7 +616,7 @@
             </div>
 
 
-            <h2 class="component-heading"> Notification Lists</h2>
+            <h2 class="component-sub-heading"> Notification Lists</h2>
             <div class="component-description">Notification Lists are used to give notifications to the user.</div>
             <ul class="notification-list-container">
                 <li class="notification-list-item">
@@ -665,6 +677,7 @@
 
             <!-- simple navigation bar -->
             <h2 class="component-heading" id="navigation"> Navigation</h2>
+            <h2 class="component-sub-heading">Normal Navigation</h2>
             <div class="component-description">Navigation is used to navigate to different places in a website in one go. </div>
             <nav class="nav-container">
                 <div class="nav-logo-and-title">
@@ -687,7 +700,7 @@
       </iframe>
             </div>
             <!-- ecommerce navigation bar -->
-            <h2 class="component-heading"> e-commerce Navigation</h2>
+            <h2 class="component-sub-heading"> e-commerce Navigation</h2>
             <div class="component-description">e-commerce Navigation is used for e-commerce app </div>
             <nav class="nav-container">
                 <div class="nav-logo-and-title">
