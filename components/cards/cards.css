@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
+    --success-light: rgb(156, 216, 156);
+    --warning-light: #f8e0b7;
+    --danger-light: #f7b2b3;
+}
+
+body {
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.component-heading {
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
+}
+
+.component-description {
+    color: var(--gray-text);
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.carbon-code iframe {
+    margin: 2rem 0;
+    width: 60%;
+}
+
+.card-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.button-container {
+    border: 2px solid var(--secoundary-black);
+    border-radius: 0.3rem;
+    width: fit-content;
+    color: black;
+    font-weight: 700;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px solid;
+    align-content: center;
+    border: 1px solid var(--secoundary);
+    width: 14.1rem;
+    gap: 0.5rem;
+    border-radius: 0.4rem;
+    box-shadow: 1.5px 1.5px 3px var(--secoundary);
+}
+
+.card-image-and-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: relative;
+}
+
+.card-image {
+    width: 14rem;
+    height: 16rem;
+    border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.heart-icon-badge {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.heart-icon-badge:hover {
+    color: var(--primary);
+}
+
+.text-badge {
+    background-color: var(--primary);
+    color: white;
+    position: absolute;
+    padding: 0 0.5rem;
+    top: 0.5rem;
+}
+
+.card-heading {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    gap: 0.1rem;
+}
+
+.card-head {
+    font-size: 1.2rem;
+}
+
+.card-discription {
+    color: var(--gray-text);
+}
+
+.card-price {
+    color: black;
+    font-weight: bold;
+}
+
+.card-price-tag {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0.2rem 0.5rem;
+    border-bottom: 1px solid var(--foot-gray);
+}
+
+.card-price-note {
+    color: #03a685;
+}
+
+.card-buttons button {
+    width: 100%;
+    border-radius: 0 0 0.4rem 0.4rem;
+    color: black;
+    font-weight: 700;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.card-buttons button:hover {
+    box-shadow: 1px 1px 3px var(--secoundary);
+}
+
+.card-primary-icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--secoundary-black);
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.card-container-horizontal {
+    width: 25rem;
+}
+
+.card-heading-horizontal {
+    margin: 0.5rem;
+    gap: 0.4rem;
+}
+
+.card-image-horizontal {
+    width: 10rem;
+    height: 10rem;
+    border-top-right-radius: 0;
+}
+
+.cross-badge {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    padding: 0.2rem;
+}
+
+.cross-badge:hover {
+    background-color: #f1f1f3;
+    color: var(--primary);
+    border-radius: 2rem;
+}
+
+.card-image-and-header-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-button button {
+    border-radius: 0;
+}
+
+.card-price-tag-overlay {
+    padding: 0.3rem;
+}
+
+.card-heading-overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    margin: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--secoundary-black);
+}
+
+.card-heading-overlay:hover {
+    display: none;
+}
+
+.price-tag-and-cart-button-overlay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-tag-and-cart-button-overlay button {
+    background-color: white;
+    border-color: white;
+    padding: 0.5rem;
+    color: var(--primary);
+    border-radius: 0 0 0.4rem 0.4rem;
+    cursor: pointer;
+}
+
+.card-para {
+    padding: 0.5rem;
+    border-top: 1px solid var(--secoundary-black);
+}
+
+@media only screen and (max-width: 1000px) {
+    .carbon-code iframe {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .carbon-code iframe {
+        width: 90%;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="components-page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="nav-container components-page-nav">
+        <div class="nav-logo-and-title">
+            <a href="/index.html"> <img class="nav-logo" src="images/codesup-logo.png" alt="logo"> </a>
+            <div class="nav-title"> <a href="/index.html">CodesUP</a></div>
+        </div>
+
+        <div class="nav-navigators">
+            <a class="nav-navigator-item" href="/index.html">Get Started</a>
+            <a class="nav-navigator-item nav-active" href="/components-page/components-page.html">Components</a>
+        </div>
+
+        <button class="nav-github-holder"><a href="#"><i class="fab fa-github">  View on Github</i></a></button>
+
+    </nav>
+    <div class="sidebar-and-components">
+
+
+        <aside>
+            <div class="sidebar-container">
+                <button class="sidebar-item"><a class="sidebar-li" href="#avatar">Avatar</a></button>
+                <button class="sidebar-item"> <a class="sidebar-li" href="#alert">Alert</a></button>
+                <button class="sidebar-item"> <a class="sidebar-li" href="#badge">Badge</a></button>
+                <button> <a class="sidebar-li" href="#button">Button</a></button>
+                <button> <a class="sidebar-li" href="#card">Card</a></button>
+                <button> <a class="sidebar-li" href="#image">Image</a></button>
+                <button> <a class="sidebar-li" href="#input">Input</a></button>
+                <button> <a class="sidebar-li" href="#text-utilities">Text-utilities</a></button>
+                <button> <a class="sidebar-li" href="#list">List</a></button>
+                <button> <a class="sidebar-li" href="#navigation">Navigation</a></button>
+            </div>
+        </aside>
+        <main class="components-container">
+            <!-- avatar -->
+            <h2 class="component-heading" id="avatar">Avatar</h2>
+            <h2 class="component-sub-heading">Image Avatar</h2>
+            <div class="component-description">
+                Avatars are used for various purposes like display picture,user id...Here avatars are various sizes <span class="highlight">large(lg),extra large(xl),medium(md),small(sm)</span>.Round Avatar is default and for box shaped avatar add
+                <span class="highlight">avatar-shape-box</span> class.
+            </div>
+
+            <main class="avatar-container">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-xl">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-lg">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-md">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-sm">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-xs">
+            </main>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Extar%2520Large%2520Avatar%2520--%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xl%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520%2520Large%2520Avatar%2520--%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Medium%2520Avatar%2520--%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Small%2520Avatar%2520--%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Extar%2520Small%2520Avatar%2520--%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%250A%2520%2520%2520%2520"
+                    style=" height: 281px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+
+            <main class="avatar-container">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-xl avatar-shape-box">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-lg avatar-shape-box">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-md avatar-shape-box">
+                <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+            </main>
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Extar%2520Large%2520Box%2520Avatar%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xl%2520avatar-shape-box%2522%253E%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520"
+                    style=" height: 133px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+
+            <h2 class="component-sub-heading">Text Avatar</h2>
+            <div class="component-description">
+                Text Avatars are used for users without display picture
+            </div>
+
+            <main class="avatar-container">
+                <div role="img" alt="avatar" class="avatar avatar-xl avatar-text">KS</div>
+                <div role="img" alt="avatar" class="avatar avatar-lg avatar-text">ZY</div>
+                <div role="img" alt="avatar" class="avatar avatar-md avatar-text">CD</div>
+                <div role="img" alt="avatar" class="avatar avatar-sm avatar-text">AB</div>
+                <div role="img" alt="avatar" class="avatar avatar-xs avatar-text">BS</div>
+            </main>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xl%2520avatar-text%2522%253EKS%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%253EZY%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-md%2520avatar-text%2522%253ECD%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-text%2522%253EAB%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520role%253D%2522img%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253EBS%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520"
+                    style=" height: 188px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+
+
+
+            <!-- alert -->
+
+
+            <h2 class="component-heading" id="alert"> Alert</h2>
+            <div class="component-description">Alert messages are used to give alerts to user</div>
+            <div class="alert-main-container">
+                <div class="alert-container success-alert">
+                    <span class="material-icons-outlined">
+                check_circle
+                </span>
+                    <div class="alert-text">Success Alert</div>
+                </div>
+
+                <div class="alert-container warning-alert">
+                    <span class="material-icons-outlined">
+                report_problem
+                </span>
+                    <div class="alert-text">Warning Alert</div>
+                </div>
+
+                <div class="alert-container error-alert">
+                    <span class="material-icons-outlined">
+                error_outline
+                </span>
+                    <div class="alert-text">Error Alert</div>
+                </div>
+
+
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Success%2520Alert%2520Container%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520success-alert%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520check_circle%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-text%2522%253ESuccess%2520Alert%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Warning%2520Alert%2520Container%2520--%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520warning-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520report_problem%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-text%2522%253EWarning%2520Alert%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Error%2520Alert%2520Container%2520--%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-container%2520error-alert%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520error_outline%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-text%2522%253EError%2520%2520Alert%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520"
+                    style="height:300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+    </iframe>
+            </div>
+
+
+
+
+
+
+
+            <!-- badge -->
+
+            <h2 class="component-heading " id="badge">Badge</h2>
+            <h2 class="component-sub-heading">Badge on Avatar</h2>
+            <div class="component-description">Badge on Avatars are used to tell the User Status.They are basically 4 types online,offline,phone,dnd modes. Copy the below HTML code according to your requirements. If u want status badge with different sizes change <span class="highlight">avatar-xl</span>                to <span class="highlight">avatar-sm</span> (desired size) and <span class="highlight">badge-xl</span> to <span class="highlight"> badge-sm</span> (desired size).</div>
+            <div class="badge-and-avatar-container">
+                <div class="badge-container">
+                    <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-xl">
+                    <div class="badge badge-xl badge-online"></div>
+                </div>
+
+                <div class="badge-container">
+                    <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-lg">
+                    <div class=" badge badge-lg badge-offline"><span class="badge-offline-circle"></span></div>
+                </div>
+
+                <div class="badge-container">
+                    <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-md">
+                    <div class="badge-phone "><i class="fas fa-mobile-alt badge-md"></i></div>
+                </div>
+
+                <div class="badge-container">
+                    <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-sm">
+                    <div class="badge badge-sm badge-dnd"><span class="badge-dnd-text">-</span></div>
+                </div>
+
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520ONLINE%2520status%2520badge%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-xl%2520badge-online%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%21--%2520OFFLINE%2520status%2520badge%2520--%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2520badge%2520badge-lg%2520badge-offline%2522%253E%253Cspan%2520class%253D%2522badge-offline-circle%2522%253E%253C%252Fspan%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%253C%21--%2520ON%2520MOBILE%2520status%2520badge%2520--%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-phone%2520%2522%253E%253Ci%2520class%253D%2522fas%2520fa-mobile-alt%2520badge-md%2522%253E%253C%252Fi%253E%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%253C%21--%2520DND%2520status%2520badge%2520--%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-sm%2520badge-dnd%2522%253E%253Cspan%2520class%253D%2522badge-dnd-text%2522%253E-%253C%252Fspan%253E%253C%252Fdiv%253E%250A%2520%2520%2520%253C%252Fdiv%253E%2520%2520%2520%250A"
+                    style="height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+
+            <h2 class="component-sub-heading">Badge on Icon</h2>
+            <div class="component-description">Badge on Icons represents the badge count.Replace the text between the span element from <span class="highlight">font icons</span> to change the icon</div>
+
+            <div class="badge-and-icon-container">
+                <div class="badge-container">
+
+                    <span class="material-icons-outlined icon">
+                     shopping_cart
+                   </span>
+                    <div class="icon-badge">9</div>
+                </div>
+
+                <div class="badge-container">
+                    <span class="material-icons-outlined icon">
+                shopping_bag
+                </span>
+                    <div class="icon-badge">9</div>
+                </div>
+
+
+                <div class="badge-container">
+                    <span class="material-icons-outlined icon">
+                sms
+                </span>
+                    <div class="icon-badge">9</div>
+                </div>
+
+
+                <div class="badge-container">
+                    <span class="material-icons-outlined icon">
+                notifications
+                </span>
+                    <div class="icon-badge">9</div>
+                </div>
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253Eshopping_cart%2520%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520shopping_bag%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520sms%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520notifications%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2520%2520%250A"
+                    style=" height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+    </iframe>
+            </div>
+
+
+
+            <!-- buttons -->
+
+            <h2 class="component-heading" id="button"> Button</h2>
+            <h2 class="component-sub-heading">Various Button styles</h2>
+            <div class="component-description">Buttons are used in various places .</div>
+            <div class="button-main-container">
+                <button class="button-container">Default Button</button>
+                <button class="button-container primary-button">Primary Button</button>
+                <button class="button-container secoundary-button">Secoundary Button</button>
+                <button class="button-container disable-button">Disable Button</button>
+                <button class="button-container  primary-outline-button">Primary-outline</button>
+                <button class="button-container primary-text-button">Primary-text</button>
+                <button class="button-container primary-icon-button">  
+       <span class="material-icons-outlined icon button-icon-shopping-cart"> shopping_cart</span>
+        Primary-icon
+        </button>
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-container%2522%253EDefault%2520Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-container%2520primary-button%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-container%2520disable-button%2522%253EDisable%2520Button%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-container%2520%2520primary-outline-button%2522%253EPrimary-outline%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-container%2520primary-text-button%2522%253EPrimary-text%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-container%2520primary-icon-button%2522%253E%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Primary-icon%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A"
+                    style=" height: 243px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+  </iframe>
+            </div>
+
+            <h2 class="component-sub-heading"> Floating Button</h2>
+            <div class="component-description">Floating buttons are mostly used in single actions like moving from bottom of the page to top of the page .</div>
+
+            <div class="button-main-container">
+                <button class="button-float-container"><span class="material-icons-outlined">
+        keyboard_double_arrow_up
+        </span></button>
+                <button class="button-float-container secoundary-float"><span class="material-icons-outlined">
+        add
+        </span>
+    </button>
+
+            </div>
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Primary%2520Floating%2520Button%2520--%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-float-container%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520keyboard_double_arrow_up%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Secoundary%2520Floating%2520Button%2520--%253E%2520%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522button-float-container%2520secoundary-float%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520add%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E"
+                    style="height: 299px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+            </div>
+
+
+            <!-- card -->
+
+            <h2 class="component-heading" id="card"> Card</h2>
+            <h2 class="component-sub-heading">Card with Badge</h2>
+            <div class="component-description">Cards are used to display few short, related pieces of information.</div>
+            <div class="card-main-container">
+                <!-- card with heart badge -->
+                <div class="card-container">
+                    <div class="card-image-and-header">
+                        <img class="card-image" src="images/card-image.png">
+                        <span class="material-icons-outlined heart-icon-badge">
+                favorite_border
+                </span>
+                        <header class="card-heading">
+                            <div class="card-head"><b>Levis</b></div>
+                            <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                        </header>
+
+                    </div>
+
+                    <div class="card-price-tag">
+                        <div class="card-price">Rs. 1874 </div>
+                        <small class="card-price-note">inclusive of all taxes</small>
+                    </div>
+
+                    <div class="card-buttons">
+                        <button class="card-primary-icon-button">  
+                    <span class="material-icons-outlined"> shopping_cart</span>
+                     Add to Cart
+                     </button>
+                    </div>
+                </div>
+                <!-- card with text badge -->
+                <div class="card-container">
+
+
+                    <div class="card-image-and-header">
+                        <img class="card-image" src="images/card-image.png">
+                        <div class="text-badge">
+                            New
+                        </div>
+                        <header class="card-heading">
+                            <div class="card-head"><b>Levis</b></div>
+                            <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                        </header>
+
+                    </div>
+
+                    <div class="card-price-tag">
+                        <div class="card-price">Rs. 1874 </div>
+                        <small class="card-price-note">inclusive of all taxes</small>
+                    </div>
+
+                    <div class="card-buttons">
+                        <button class="card-primary-icon-button">  
+                        <span class="material-icons-outlined"> shopping_cart</span>
+                         Add to Cart
+                         </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520card%2520with%2520heart%2520badge%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image-and-header%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522images%252Fcard-image.png%2522%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520heart-icon-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520favorite_border%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520%2520class%253D%2522card-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520%2520class%253D%2522card-head%2522%253E%253Cb%253ELevis%253C%252Fb%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-discription%2522%253E%2520Women%2520Pink%2520Printed%2520Sweatshirt%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-tag%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253ERs.%25201874%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-price-note%2522%253Einclusive%2520of%2520all%2520taxes%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-icon-button%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520Cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520card%2520with%2520text%2520badge%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%250A%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image-and-header%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522images%252Fcard-image.png%2522%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520New%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520%2520class%253D%2522card-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520%2520class%253D%2522card-head%2522%253E%253Cb%253ELevis%253C%252Fb%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-discription%2522%253E%2520Women%2520Pink%2520Printed%2520Sweatshirt%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-tag%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253ERs.%25201874%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-price-note%2522%253Einclusive%2520of%2520all%2520taxes%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-icon-button%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%2520shopping_cart%253C%252Fspan%253E%250A%2520"
+                    style=" height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+            <!-- Horizontal Card with Dismiss -->
+
+            <h2 class="component-sub-heading"> Horizontal Card with Dismiss</h2>
+            <div class="component-description">Dismiss cards are used to delete the card .</div>
+            <div class="card-container card-container-horizontal">
+                <div class="card-image-and-header card-image-and-header-horizontal">
+                    <img class="card-image card-image-horizontal" src="images/card-image.png">
+                    <header class="card-heading card-heading-horizontal">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Blue Colour blocked Denim Jacket </div>
+                        <div class="card-price">Rs. 1874 </div>
+                        <div class="card-buttons  horizontal-button">
+                            <button class="card-primary-icon-button">  
+                        <span class="material-icons-outlined"> shopping_cart</span>
+                        Check Out
+                     </button>
+                        </div>
+
+
+                        <span class="material-icons-outlined cross-badge">
+                    close
+                </span>
+                    </header>
+                </div>
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2520card-container-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image-and-header%2520card-image-and-header-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2520card-image-horizontal%2522%2520src%253D%2522...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-heading%2520card-heading-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%253Cb%253ELevis%253C%252Fb%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-discription%2522%253E%2520Women%2520Blue%2520Colour%2520blocked%2520Denim%2520Jacket%2520%253C%252Fdiv%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253ERs.%25201874%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2520%2520horizontal-button%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-icon-button%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Check%2520Out%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520cross-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520close%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style=" height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+            <!-- Cards with text overlay -->
+
+            <h2 class="component-sub-heading"> Cards with text overlay</h2>
+            <div class="component-description">Cards are used to display few short, related pieces of information.</div>
+            <div class="card-container">
+                <div class="card-image-and-header card-image-and-header-overlay">
+                    <img class="card-image" src="images/card-image.png">
+                    <div class="text-badge">
+                        New
+                    </div>
+                    <header class="card-heading card-heading-overlay">
+                        <div class="card-head"><b>Levis</b></div>
+                        <div class="card-discription"> Women Pink Printed Sweatshirt </div>
+                    </header>
+
+                </div>
+                <div class="price-tag-and-cart-button-overlay">
+                    <div class="card-price-tag card-price-tag-overlay">
+                        <div class="card-price">Rs. 1874 </div>
+                        <small class="card-price-note">inclusive of all taxes</small>
+                    </div>
+
+
+                    <button class="card-primary-icon-button">  
+                <span class="material-icons-outlined"> shopping_cart</span>
+            </button>
+                </div>
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image-and-header%2520card-image-and-header-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-image%2522%2520src%253D%2522images%252Fcard-image.png%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-badge%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520New%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-heading%2520card-heading-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%253Cb%253ELevis%253C%252Fb%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-discription%2522%253E%2520Women%2520Pink%2520Printed%2520Sweatshirt%2520%253C%252Fdiv%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522price-tag-and-cart-button-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price-tag%2520card-price-tag-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-price%2522%253ERs.%25201874%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522card-price-note%2522%253Einclusive%2520of%2520all%2520taxes%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-icon-button%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%2520shopping_cart%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style=" height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+            <!-- Text only cards -->
+
+            <h2 class="component-sub-heading">Text only cards</h2>
+            <div class="component-description">Cards with text only are used to give short insite of something</div>
+            <div class="card-container">
+                <div class="card-image-and-header">
+                    <header class="card-heading">
+                        <div class="card-head"><b>Title</b></div>
+                        <div class="card-discription"> Sub Title </div>
+                    </header>
+
+                </div>
+
+                <div class="card-para">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illo dolores voluptatum molestiae voluptate suscipit debitis nam qui beatae tenetur.</p>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="card-primary-icon-button">  
+                 Show More
+                 </button>
+                </div>
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image-and-header%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-heading%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%253Cb%253ETitle%253C%252Fb%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-discription%2522%253E%2520Sub%2520Title%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-para%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%2520Rem%252Cillo%2520dolores%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520voluptatum%2520molestiae%2520voluptate%2520suscipit%2520debitis%2520nam%2520qui%2520beatae%2520tenetur.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-buttons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522primary-icon-button%2522%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Show%2520More%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                    style=" height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+
+            <!-- image -->
+
+            <h2 class="component-heading" id="image"> Image</h2>
+            <h2 class="component-sub-heading">Responsive Image</h2>
+            <div class="component-description"></div>
+            <img src="images/responsive.png" alt="Responsive img" class="image-responsive">
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522....%2522%2520alt%253D%2522Responsive%2520img%2522%2520class%253D%2522image-responsive%2522%253E%2520%2520%2520%2520"
+                    style="height: 76px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+            <h2 class="component-sub-heading"> Round image</h2>
+            <div class="component-description"></div>
+            <img src="images/round.png" alt="Round img" class="image-round">
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522....%2522%2520alt%253D%2522Round%2520img%2522%2520class%253D%2522image-round%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                    style="height: 76px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+            <!-- input -->
+
+            <h2 class="component-heading" id="input">Input </h2>
+            <h2 class="component-sub-heading">Signin input</h2>
+            <div class="component-description">Input fields are used to take data from user .Mostly used in signin or login.</div>
+            <form class="input-whole-form">
+                <div class="input-data-item">
+                    <label for="fname"> First name:</label>
+                    <input type="text" name="fname">
+                </div>
+
+                <div class="input-data-item">
+                    <label for="lname"> Last name:</label>
+                    <input type="text" name="lname">
+                </div>
+
+                <div class="input-data-item">
+                    <label for="gender"> Gender:</label>
+                    <input type="radio" name="gender">
+                    <label for="female"> female</label>
+                    <input type="radio" name="gender">
+                    <label for="male"> male</label>
+                    <input type="radio" name="gender">
+                    <label for="transgender"> transgender</label>
+                </div>
+
+                <div class="input-data-item">
+
+                    <input type="checkbox" name="terms">
+                    <label for="lname">Agree terms and conditions </label>
+                </div>
+
+
+            </form>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cform%2520class%253D%2522input-whole-form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-data-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522fname%2522%253E%2520First%2520name%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522fname%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-data-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522lname%2522%253E%2520Last%2520name%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520name%253D%2522lname%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-data-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522gender%2522%253E%2520Gender%253A%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522female%2522%253E%2520female%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522male%2522%253E%2520male%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522gender%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522transgender%2522%253E%2520transgender%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522input-data-item%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520name%253D%2522terms%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522lname%2522%253EAgree%2520terms%2520and%2520conditions%2520%253C%252Flabel%253E%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%253C%252Fform%253E%2520%2520%2520"
+                    style=" height:300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+            </div>
+            <h2 class="component-sub-heading"> Normal Input</h2>
+            <div class="component-description">Input fields are used to take data from user .Mostly used in signin or login.</div>
+            <form class="input-form">
+                <input type="text" class="input-field" placeholder=" ">
+                <label for="" class="input-label">Name</label>
+            </form>
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cform%2520class%253D%2522input-form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-field%2522%2520placeholder%253D%2522%2520%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522%2520class%253D%2522input-label%2522%253EName%253C%252Flabel%253E%250A%2520%2520%2520%2520%253C%252Fform%253E"
+                    style=" height: 131px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+            <h2 class="component-sub-heading"> Error Input</h2>
+            <div class="component-description">Input fields are used to take data from user .Mostly used in signin or login.</div>
+            <form class="input-form">
+                <input type="text" class="input-field-error" placeholder=" ">
+                <label for="" class="input-label-error">
+            <span class="material-icons-outlined">
+            error
+            </span>
+            Your Name
+        </label>
+            </form>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cform%2520class%253D%2522input-form%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522input-field-error%2522%2520placeholder%253D%2522%2520%2522%253E%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522%2522%2520class%253D%2522input-label-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520error%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Your%2520Name%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%253C%252Fform%253E"
+                    style=" height: 225px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+
+
+            <!-- text utilities -->
+
+
+            <h2 class="component-heading" id="text-utilities"> Text Utilities</h2>
+            <h2 class="component-sub-heading">Headings</h2>
+
+            <div class="component-description">Headings are used to give head line to the data.there are 6 types of heading <span class="highlight">h1,h2,h3,h4,h5,h6</span> </div>
+            <div class="text-container">
+                <h1> H1--Heading</h1>
+                <h2> H2--Heading</h2>
+                <h3> H3--Heading</h3>
+                <h4> H4--Heading</h4>
+                <h5> H5--Heading</h5>
+                <h6> H6--Heading</h6>
+            </div>
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch1%253E%2520H1--Heading%253C%252Fh1%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%253E%2520H2--Heading%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253E%2520H3--Heading%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253E%2520H4--Heading%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch5%253E%2520H5--Heading%253C%252Fh5%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch6%253E%2520H6--Heading%253C%252Fh6%253E%250A%250A"
+                    style="width: 375px; height: 223px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+            </iframe>
+            </div>
+
+            <h2 class="component-sub-heading"> Text Alignments</h2>
+            <div class="component-description">There are 3 types of alighnments<span class="highlight">left-align,right-align,center-align</span> </div>
+
+            <div class="text-container-alignments">
+                <h2 class="text-left-align"> H2--Heading-left-align</h2>
+                <h2 class="text-center-align"> H2--Heading-center-align</h2>
+                <h2 class="text-right-align"> H2--Heading-right-align</h2>
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-left-align%2522%253E%2520H2--Heading-left-align%253C%252Fh2%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-center-align%2522%253E%2520H2--Heading-center-align%253C%252Fh2%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch2%2520class%253D%2522text-right-align%2522%253E%2520H2--Heading-right-align%253C%252Fh2%253E%250A%250A"
+                    style=" height: 167px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+               </iframe>
+            </div>
+            <h2 class="component-sub-heading"> Text Styles</h2>
+            <div class="text-container">
+                <p> This text is default colored</p>
+                <p class="text-gray"> This text is grey colored</p>
+                <p class="text-primary"> This text is primary colored</p>
+                <p class="text-success"> This text is success colored</p>
+                <p class="text-warning"> This text is warning colored</p>
+                <p class="text-failure"> This text is failure colored</p>
+                <p class="text-underline"> This text is underlined </p>
+                <p class="text-overline"> This text is overlined </p>
+                <p class="text-strike"> This text is striked </p>
+                <p class="text-small"> This text is small</p>
+                <p class="text-large"> This text is large</p>
+                <p class="text-bold"> This text is bold</p>
+                <p class="text-primary-background"> This text is has primary background color</p>
+
+            </div>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253E%2520This%2520text%2520is%2520default%2520colored%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-gray%2522%253E%2520This%2520text%2520is%2520grey%2520colored%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-primary%2522%253E%2520This%2520text%2520is%2520primary%2520colored%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-success%2522%253E%2520This%2520text%2520is%2520success%2520colored%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-warning%2522%253E%2520This%2520text%2520is%2520warning%2520colored%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-failure%2522%253E%2520This%2520text%2520is%2520failure%2520colored%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-underline%2522%253E%2520This%2520text%2520is%2520underlined%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-overline%2522%253E%2520This%2520text%2520is%2520overlined%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text-strike%2522%253E%2520This%2520text%2520is%2520striked%2520%253C%252Fp%253E%250A%250A"
+                    style=" height:279px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+            </div>
+
+
+
+
+            <!-- lists -->
+
+
+
+            <h2 class="component-heading" id="list">Lists</h2>
+            <h2 class="component-sub-heading">Normal Lists</h2>
+            <div class="component-description">Lists are powerful component used to display series of component </div>
+            <ul class="list-container">
+                <li class="list-item"> first list item </li>
+                <li class="list-item"> secound list item </li>
+                <li class="list-item"> third list item </li>
+                <li class="list-item"> fourth list item </li>
+                <li class="list-item"> fifth list item </li>
+            </ul>
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520first%2520list%2520item%2520%253C%252Fli%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520secound%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520third%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fourth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fifth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A"
+                    style="height: 206px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+    </iframe>
+            </div>
+
+
+            <h2 class="component-sub-heading"> Active Item in List</h2>
+            <div class="component-description">Active is used specify which list item is active.</div>
+            <ul class="list-container">
+                <li class="list-item list-active-item"> first list item </li>
+                <li class="list-item"> secound list item </li>
+                <li class="list-item"> third list item </li>
+                <li class="list-item"> fourth list item </li>
+                <li class="list-item"> fifth list item </li>
+            </ul>
+
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=&ds=true&dsyoff=30px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2520list-active-item%2522%253E%2520first%2520list%2520item%2520%253C%252Fli%253E%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520secound%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520third%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fourth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-item%2522%253E%2520fifth%2520list%2520item%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%250A"
+                    style=" height: 225px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+
+
+            <h2 class="component-sub-heading"> Notification Lists</h2>
+            <div class="component-description">Notification Lists are used to give notifications to the user.</div>
+            <ul class="notification-list-container">
+                <li class="notification-list-item">
+                    <img src="images/dp.jpeg" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+                    <div class="notification-list-description">
+                        <h4>Satwika signin!!😊</h4>
+                        <small>u can view more intresting stuff like this!</small>
+                    </div>
+
+                </li>
+
+                <li class="notification-list-item">
+                    <img src="images/jio.png" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+                    <div class="notification-list-description">
+                        <h4>JZ-JioPay</h4>
+                        <small>90% daily data quota used today!</small>
+                    </div>
+
+                </li>
+
+                <li class="notification-list-item">
+                    <img src="images/neog.png" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+                    <div class="notification-list-description">
+                        <h4>neoG Bot 🤖</h4>
+                        <small>Thank You :🥳 'xyz' for helping 'abc'.</small>
+                    </div>
+
+                </li>
+
+                <li class="notification-list-item">
+                    <img src="images/galary.png" alt="avatar" class="avatar avatar-sm avatar-shape-box">
+
+                    <div class="notification-list-description">
+                        <h4>Galary📷</h4>
+                        <small>Nostalgia!  smile wider with memories!</small>
+                    </div>
+
+                </li>
+
+            </ul>
+
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cul%2520class%253D%2522notification-list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253ESatwika%2520signin%21%21%25F0%259F%2598%258A%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253Eu%2520can%2520view%2520more%2520intresting%2520stuff%2520like%2520this%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EJZ-JioPay%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253E90%2525%2520daily%2520data%2520quota%2520used%2520today%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EneoG%2520Bot%2520%25F0%259F%25A4%2596%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253EThank%2520You%2520%253A%25F0%259F%25A5%25B3%2520%27xyz%27%2520for%2520helping%2520%27abc%27.%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522notification-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522avatar%2522%2520class%253D%2522avatar%2520avatar-sm%2520avatar-shape-box%2522%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notification-list-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch4%253EGalary%25F0%259F%2593%25B7%253C%252Fh4%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%253ENostalgia%21%2520%2520smile%2520wider%2520with%2520memories%21%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%253C%252Ful%253E%250A%250A"
+                    style="height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+          </iframe>
+            </div>
+
+
+
+
+
+            <!-- navigation -->
+
+
+            <!-- simple navigation bar -->
+            <h2 class="component-heading" id="navigation"> Navigation</h2>
+            <h2 class="component-sub-heading">Normal Navigation</h2>
+            <div class="component-description">Navigation is used to navigate to different places in a website in one go. </div>
+            <nav class="nav-container">
+                <div class="nav-logo-and-title">
+                    <img class="nav-logo" src="images/codesup-logo.png" alt="logo">
+                    <div class="nav-title"> CodesUp</div>
+                </div>
+
+                <div class="nav-navigators">
+                    <a class="nav-navigator-item" href="#">Home</a>
+                    <a class="nav-navigator-item" href="#">Documentation</a>
+                </div>
+
+
+                <button class="nav-github-holder"><a href="#"><i class="fab fa-github">  View on Github</i></a></button>
+
+            </nav>
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522navigation-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-and-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522nav-logo%2522%2520src%253D%2522...%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation-title%2522%253E%2520CodesUp%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-navigators%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-navigator-item%2522%2520href%253D%2522%2523%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-navigator-item%2522%2520href%253D%2522%2523%2522%253EDocumentation%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522nav-github-holder%2522%253E%2520%2520%253Ca%2520%2520href%253D%2522%2523%2522%253E%253Ci%2520class%253D%2522fab%2520fa-github%2522%253E%2520%2520View%2520on%2520Github%253C%252Fi%253E%253C%252Fa%253E%253C%252Fbutton%253E%250A%250A%2520%2520%2520%2520%253C%252Fnav%250A%250A"
+                    style=" height: 300px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+            <!-- ecommerce navigation bar -->
+            <h2 class="component-sub-heading"> e-commerce Navigation</h2>
+            <div class="component-description">e-commerce Navigation is used for e-commerce app </div>
+            <nav class="nav-container">
+                <div class="nav-logo-and-title">
+                    <img class="nav-logo" src="images/codesup-logo.png" alt="logo">
+                    <div class="nav-title"> DressUp</div>
+                </div>
+
+                <div class="nav-navigators">
+                    <a class="nav-navigator-item" href="#">Home</a>
+                    <a class="nav-navigator-item" href="#">Kids</a>
+                    <a class="nav-navigator-item" href="#">Women</a>
+                    <a class="nav-navigator-item" href="#">Men</a>
+
+                </div>
+
+                <div class="nav-search">
+                    <span class="material-icons-outlined">
+                    search
+                    </span>
+                    <input type="text" placeholder="Search for products....">
+                </div>
+
+                <ul class="nav-icons">
+                    <li><span class="material-icons-outlined icon">
+                account_circle
+                </span>
+                    </li>
+
+                    <li>
+                        <div class="badge-container">
+                            <span class="material-icons-outlined icon">
+                        favorite_border
+                        </span>
+                            <div class="icon-badge">9</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="badge-container">
+                            <span class="material-icons-outlined icon">
+                        shopping_cart
+                        </span>
+                            <div class="icon-badge">9</div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="carbon-code">
+                <iframe src="https://carbon.now.sh/embed?bg=rgba%280%2C0%2C0%2C0%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cnav%2520class%253D%2522navigation-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-logo-and-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522nav-logo%2522%2520src%253D%2522....%2522%2520alt%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation-title%2522%253E%2520DressUp%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-navigators%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-navigator-item%2522%2520href%253D%2522%2523%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-navigator-item%2522%2520href%253D%2522%2523%2522%253EKids%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-navigator-item%2522%2520href%253D%2522%2523%2522%253EWomen%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522nav-navigator-item%2522%2520href%253D%2522%2523%2522%253EMen%253C%252Fa%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520search%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520placeholder%253D%2522Search%2520for%2520products....%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522nav-icons%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520account_circle%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520favorite_border%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522material-icons-outlined%2520icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520shopping_cart%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522icon-badge%2522%253E9%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520"
+                    style=" height: 350px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+      </iframe>
+            </div>
+
+
+
+        </main>
+    </div>
+
+    <footer class="foot">
+        <div class="footer-made-stmt">Made with <span class="highlight"> ❤</span> by Satwika</div>
+        <ul class="footer-item-link">
+            <li class="footer-initem"> <a class="footer-item" href="https://www.linkedin.com/in/satwika-kacham-70aa4b200"><i class="fab fa-linkedin-in logo"></i></a></li>
+            <li class="footer-initem"> <a class="footer-item" href="https://github.com/satwikakacham"><i class="fab fa-github logo"></i></a> </li>
+            <li class="footer-initem"> <a class="footer-item" href="https://twitter.com/kachamsatwika"><i class="fab fa-twitter logo"></i></a> </li>
+            <li class="footer-initem"> <a class="footer-item footer-gmail-laptop" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScnbzwRdCSXcClrbZphVslhHrkwwpTSfmwBlpFlVcGXxNCqdSSsWBHJqDnfRNBsMFJkDw" target="_blank"><i class="fas fa-envelope"></i></a> </li>
+            <li class="footer-initem"> <a class="fotter-item footer-gmail-phone" href="mailto:satwikakacham@gmail.com"><i class="fas fa-envelope"></i></a> </li>
+
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>
