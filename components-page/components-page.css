@@ -40,12 +40,6 @@ main {
     margin: 3rem 0;
 }
 
-.components-page-nav {
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
-
 .sidebar-and-components {
     display: flex;
 }
@@ -66,7 +60,6 @@ main {
     padding-left: 1rem;
     margin: 0;
     padding: 2rem;
-    width: 100%;
 }
 
 .component-sub-heading {
@@ -146,7 +139,7 @@ main {
     color: var(--primary);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .footer-gmail-laptop {
         display: none;
         padding: 0px;
@@ -156,4 +149,21 @@ main {
         color: var(--secoundary);
         padding: 2px;
     }
+    .sidebar-container {
+        display: none;
+    }
+    .components-container {
+        border: none;
+    }
+}
+
+.nav-container {
+    position: relative;
+    z-index: 0;
+}
+
+.components-page-nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
