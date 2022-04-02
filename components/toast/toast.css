@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+@import "../../all_components_css.css";
+
+.toast-container{
+    display:flex;
+     width:22rem;
+     padding:1rem;
+     justify-content: space-between;
+     align-items: center;
+     font-weight: bold;
+}
+
+/* .toast-container:nth-child(3){
+    margin-left: auto;
+} */
+.toast-simple-container{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+
+}
+.success-toast{
+    color:var(--success);
+    background-color: var(--success-light);
+}
+
+.warning-toast{
+    color:var(--warning);
+    background-color: var(--warning-light);
+}
+
+.error-toast{
+    color:var(--danger);
+    background-color: var(--danger-light);
+}
+
+.info-toast,
+.primary-toast{
+    color:var(--primary);
+    background-color:pink;
+    
+}
+
+.toast-action-container{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width:22rem;
+    padding:1rem;
+    font-weight: bold;
+    background-color:pink;
+}
+
+.toast-action-main-content{
+    display:flex;
+    gap:1rem;
+}
+
+.toast-action-button-container{
+    margin-left:auto;
+    display:flex;
+    gap:1rem;
+}
