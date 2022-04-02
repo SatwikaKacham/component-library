@@ -9,3 +9,5 @@
 @import '/components/lists/list.css';
 @import '/components/text-utilities/text-utility.css';
 @import '/components/buttons/button.css';
+@import '/components/rating/rating.css';
+@import '/components/toast/toast.css';
