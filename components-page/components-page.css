@@ -9,6 +9,8 @@
 @import '/components/lists/list.css';
 @import '/components/text-utilities/text-utility.css';
 @import '/components/buttons/button.css';
+@import '/components/rating/rating.css';
+@import '/components/toast/toast.css';
 
 /* .nav-container {
     position: fixed;
@@ -47,7 +49,7 @@ main {
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.3rem;
     margin: 1rem;
     list-style-type: none;
     width: 10rem;
