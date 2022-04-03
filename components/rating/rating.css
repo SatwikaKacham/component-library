@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+@import "../../all_components_css.css";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secoundary: #b3b3b4;
+    --secoundary-black: #272727;
+    --primary: #ff3e6c;
+    --gray-text: #535665;
+    --success: green;
+    --warning: #f9a61a;
+    --danger: #f34648;
+    --success-light: rgb(156, 216, 156);
+    --warning-light: #f8e0b7;
+    --danger-light: #f7b2b3;
+    --secoundary-gray: #4e4f53;
+    --gray-light :#d9d9db;
+}
+
+body {
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.component-heading {
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
+}
+
+.component-description {
+    color: var(--gray-text);
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.carbon-code iframe {
+    margin: 2rem 0;
+    width: 60%;
+}
+
+.rating-checked{
+    color:var(--warning);
+}
+.rating-container-overall{
+    background-color:var(--gray-light);
+    display:flex;
+    gap:0.3rem;
+    padding:0.3rem;
+    width:fit-content;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    /* justify-content: baseline; */
+   align-items: baseline;
+   
+}
