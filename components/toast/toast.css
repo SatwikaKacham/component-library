@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 @import "../../all_components_css.css";
-
+:root{
+    --info:rgb(15, 52, 119);
+}
 .toast-container{
     display:flex;
      width:22rem;
@@ -37,11 +39,16 @@
     background-color: var(--danger-light);
 }
 
-.info-toast,
+
 .primary-toast{
     color:var(--primary);
     background-color:pink;
     
+}
+
+.info-toast{
+    color:var(--info);
+    background-color:skyblue;
 }
 
 .toast-action-container{
