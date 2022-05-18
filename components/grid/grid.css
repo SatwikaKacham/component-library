@@ -4,3 +4,35 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 @import "../../all_components_css.css";
 
+
+
+
+.grid{
+    display:grid;
+     gap:1rem;
+     margin:2rem;
+}
+
+ .grid-item{
+    display:grid;
+    padding:0.8rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secoundary);
+    border: 1px solid var(--secoundary-gray);
+}
+
+.grid-2-col{
+grid-template-columns: repeat(2,1fr);
+gap:1rem;
+} 
+
+.grid-3-col{
+    grid-template-columns: repeat(3,1fr);
+gap:1rem;
+}
+
+.grid-4-col{
+    grid-template-columns: repeat(4,1fr);
+gap:1rem;
+}
