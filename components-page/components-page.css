@@ -11,6 +11,7 @@
 @import '/components/buttons/button.css';
 @import '/components/rating/rating.css';
 @import '/components/toast/toast.css';
+@import "/components/grid/grid.css";
 
 /* .nav-container {
     position: fixed;
@@ -49,7 +50,7 @@ main {
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1rem;
     margin: 1rem;
     list-style-type: none;
     width: 10rem;
